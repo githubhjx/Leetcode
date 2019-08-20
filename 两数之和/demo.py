@@ -30,3 +30,7 @@ class Solution(object):
                 return [map[sub_val], idx]
             map[val] = idx
         return None
+
+    
+    
+    
