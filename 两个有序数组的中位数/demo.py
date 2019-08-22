@@ -45,10 +45,10 @@ class Solution:
         while (iMin <= iMax) {
             int i = (iMin + iMax) / 2;
             int j = (m + n + 1) / 2 - i;
-            if (j != 0 && i != m && B[j-1] > A[i]){ // i 需要增大
+            if (j != 0 and i != m and B[j-1] > A[i]){ // i 需要增大
                 iMin = i + 1; 
             }
-            else if (i != 0 && j != n && A[i-1] > B[j]) { // i 需要减小
+            else if (i != 0 and j != n and A[i-1] > B[j]) { // i 需要减小
                 iMax = i - 1; 
             }
             else { // 达到要求，并且将边界条件列出来单独考虑
