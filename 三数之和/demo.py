@@ -58,3 +58,10 @@ class Solution:
                   while i < j and nums[j] == nums[j + 1]:
                       j -= 1
       return res
+    
+  # 更简洁的
+  class Solution:
+    def threeSum(self,nums):
+        ts, bs = [i for i in set(list(itertools.combinations(nums, 3))) if sum(i) == 0], {}
+        for i in ts: bs.update({frozenset(i): i}) if frozenset(i) not in list(bs.keys()) else 0         
+        return list(bs.values())
