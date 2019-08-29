@@ -67,3 +67,13 @@ class Solution(object):
         # In the end, if the stack is empty, then we have a valid expression.
         # The stack won't be empty for cases like ((()
         return not stack
+
+# 另：
+class Solution:
+    def isValid(self, s: str) -> bool:
+        dic = {'{': '}',  '[': ']', '(': ')', '?': '?'}
+        stack = ['?']
+        for c in s:
+            if c in dic: stack.append(c)
+            elif dic[stack.pop()] != c: return False 
+        return len(stack) == 1
