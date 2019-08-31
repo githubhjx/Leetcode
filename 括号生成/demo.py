@@ -58,6 +58,7 @@ class Solution(object):
         backtrack()
         return ans
 
+      
 # 闭合数
 class Solution(object):
     def generateParenthesis(self, N):
@@ -69,6 +70,7 @@ class Solution(object):
                     ans.append('({}){}'.format(left, right))
         return ans
 
+      
 # 动态规划
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
