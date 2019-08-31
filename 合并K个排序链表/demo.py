@@ -33,6 +33,7 @@ class Solution(object):
             point = point.next
         return head.next
 
+    
 # 逐一比较 队列
 from Queue import PriorityQueue
 
@@ -56,6 +57,7 @@ class Solution(object):
                 q.put((node.val, node))
         return head.next
 
+    
 # 分治法
 class Solution(object):
     def mergeKLists(self, lists):
