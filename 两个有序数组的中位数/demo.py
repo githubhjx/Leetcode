@@ -32,6 +32,7 @@ class Solution:
         else:
             return nums1[(len(nums1)//2)]
 
+        
 # 递归法，数学容易证明，将两个数组取二分，得到两个中间值，共四段，
 # 则两个数组的中位数必然在小的中间值后半段和大的中间值的前半段，递归剩下两段
 class Solution:
