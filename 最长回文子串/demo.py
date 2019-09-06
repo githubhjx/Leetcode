@@ -86,7 +86,7 @@ class Solution:
             r += 1
         return s[l + 1:r], r - l - 1
 
-# Manacher 算法
+# Manacher 算法 只适用此问题
 public class Solution {
 
 /**
